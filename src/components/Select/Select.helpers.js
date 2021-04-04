@@ -6,5 +6,6 @@ export function getDisplayedValue(value, children) {
     (child) => child.props.value === value
   );
 
+  console.log(selectedChild);
   return selectedChild.props.children;
 }
