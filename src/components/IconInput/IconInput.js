@@ -34,14 +34,14 @@ const SIZES = {
     "--border-width": 1 + "px",
     "--icon-size": 15,
     "--icon-width": 1,
-    "--text-padding": 20 + "px"
+    "--text-padding": 24 + "px"
   },
   large: {
     "--font-size": 18 + "px",
     "--border-width": 2 + "px",
     "--icon-size": 22.5,
     "--icon-width": 2,
-    "--text-padding": 30 + "px"
+    "--text-padding": 36 + "px"
   }
 }
 
@@ -61,6 +61,7 @@ const Input = styled.input`
   border-bottom: var(--border-width) solid black;
 
   padding-left: var(--text-padding);
+  height: var(--text-padding);
 
   &::placeholder {
     color: ${COLORS.gray500};
